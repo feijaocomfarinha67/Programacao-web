@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    padding: 20px;
+}
+.items{
+    padding: 30px;
+    background-color: antiquewhite;
+    margin: 5px;
+}

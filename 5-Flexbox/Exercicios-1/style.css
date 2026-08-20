@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-flex{
+display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    padding: 20px;
+    height: 100vh;
+    border: dashed;color: rgba(250, 235, 215, 0.863);
+}
+
+.bloco{
+     padding: 30px;
+    background-color: rgb(255, 0, 191);
+    margin: 5px;
+
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pai{
+    position: relative;
+    top: 100px;
+    left: 500px;
+    width: 200px;
+    padding: 100px;
+    border: 3px solid black;
+}
+
+.blue{
+    position: relative;
+    width: 200px;
+    padding: 100px;
+    background-color: blue;
+    left: 500px;
+    border: 3px solid green;
+}
+
+.blueviolet {
+    width: 50px;
+    padding: 100px;
+    background-color: blueviolet;
+}
