@@ -14,3 +14,16 @@ btn.addEventListener('click', function(){
         tarefa.focus();
     }
 })
+
+tarefa.addEventListener('keydown', function(event) {
+    
+    if (tarefa.value != "" & event.key == "Enter") {
+        const novoItem = document.createElement('li');
+        novoItem.textContent = tarefa.value
+
+        lista.appendChild(novoItem);
+
+        tarefa.value = "";
+        tarefa.focus();
+    }
+})
