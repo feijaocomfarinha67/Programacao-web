@@ -17,4 +17,4 @@ document.addEventListener('mouseenter', normalizarSistema)
 
 window.addEventListener('blur', dispararAlarme)
 
-window.addEventListener('focus', normalizarSistema)
+window.addEventListener('focus', normalizarSistema) 
