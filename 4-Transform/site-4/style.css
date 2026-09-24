@@ -1,60 +1,85 @@
-/* CSS */
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: black;
-    margin: 0;
-    height: 100vh;
-    position: relative;
 }
 
-/* Regra geral para centralizar e animar tudo */
-div {
-    position: absolute;
-    top: 50%;
+#grande {
+    position:absolute;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.5s ease-in-out;
-    border: 1px solid green; /* Borda padrão para os círculos */
+
+    width: 400px;
+    height: 400px;
+
+    border: 3px solid green;
+    border-radius: 50%;
 }
 
-/* Tamanhos dos Círculos */
-#grande { width: 300px; height: 300px; border-radius: 50%; }
-#medio { width: 200px; height: 200px; border-radius: 50%; }
-#pequeno { width: 100px; height: 100px; border-radius: 50%; }
+#medio {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-/* Linhas da Mira (sem borda, usamos fundo) */
-#horizontal {
     width: 300px;
-    height: 2px;
-    background-color: green;
-    border: none;
+    height: 300px;
+
+    border: 3px solid green;
+    border-radius: 50%;
+}
+
+#pequeno {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 200px;
+    height: 200px;
+
+    border: 3px solid green;
+    border-radius: 50%;
+}
+
+#horizontal {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+
+    border: 1px solid green;
 }
 
 #vertical {
-    width: 2px;
-    height: 300px;
-    background-color: green;
-    border: none;
-}
-
-#ponteiro {
-    width: 150px;
-    height: 4px;
-    background-color: lime;
-    position: absolute;
-    top: 50%;
+    position:absolute;
     left: 50%;
-    transform-origin: left center;
-    
-    /* A SOMBRA: 0px para os lados, 8px para baixo, 20px de fumaça */
-    box-shadow: 0px 8px 25px green;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 400px;
+
+    border: 1px solid green;
 }
 
-body:hover #ponteiro {
-    /* Nome | Tempo | Ritmo (Constante) | Repetição */
-    animation: rodar 4s linear infinite;
+#barra {
+    position:absolute;
+    left: 50%;
+    top: 39.2%;
+    transform: translate(-50%, -50%);
+
+    height: 200px;
+
+    border: 1px solid rgb(0, 255, 0);
+    transition: 120s;
 }
 
-@keyframes rodar {
-    from { transform: translateY(-50%) rotate(0deg); }
-    to { transform: translateY(-50%) rotate(360deg); }
+#barra:hover {
+    rotate: 36000deg;
 }
